@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict/>
+		<dict/>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>训练历史</string>
+			<key>iconName</key>
+			<string>me_icon_history</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>训练等级</string>
+			<key>iconName</key>
+			<string>me_icon_runlevel</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>我的徽章</string>
+			<key>iconName</key>
+			<string>u_center_badge</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>我的收藏</string>
+			<key>iconName</key>
+			<string>u_center_collect</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>购物车</string>
+			<key>iconName</key>
+			<string>shoppingcart_icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>我的订单</string>
+			<key>iconName</key>
+			<string>order</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>个人资料</string>
+			<key>iconName</key>
+			<string>u_center_personal</string>
+		</dict>
+	</array>
+</array>
+</plist>
