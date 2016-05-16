@@ -39,6 +39,6 @@
     NSDictionary *dict = @{@"name":@"Rogen",@"age":@26,@"address":@"shengzhen"};
     NSString *dictPath = [docuPath stringByAppendingPathComponent:@"rogenDict.plist"];
     [dict writeToFile:dictPath atomically:YES];
-    NSAttributedString
+
 }
 @end
