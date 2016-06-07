@@ -6,14 +6,10 @@
 //  Copyright © 2016年 TRRogen. All rights reserved.
 //
 #import "KeepTabBarController.h"
-#import "TrainViewController.h"
-#import "DiscoveryViewController.h"
-#import "TrendsViewController.h"
-#import "PersionalViewController.h"
-#import "KeepNavigationController.h"
-#import "KeepTabBarView.h"
-@interface KeepTabBarController ()<KeepTabBarViewDelegate>
-@property(nonatomic,strong)NSArray<NSDictionary*> *tabBarBtnsInfo;
+#import "KeepBarManager.h"
+
+@interface KeepTabBarController ()
+
 @end
 
 @implementation KeepTabBarController
@@ -40,68 +36,31 @@
         [tabBarItem setTitleTextAttributes:normalTitleAtt forState:UIControlStateNormal];
         [tabBarItem setTitleTextAttributes:selectedTitleAtt forState:UIControlStateSelected];
         
+        
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSLog(@"%s",__func__);  //打印出当前的方法
-//    NSLog(@"%@",self.view.subviews);  //打印出所有子视图和其frame
     
-    [self addChildViewControllers];   //添加所有的Child View Controller
     //在TabBar的上面加一个灰色的分隔条
     UIView *topLine = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tabBar.frame.size.width,1)];
     topLine.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
     [self.tabBar addSubview:topLine];
     
-    //创建一个用于替代TabBar的view
-//    self.selectedIndex =0;   //设置当前选中的下标为0;
-//    KeepTabBarView *tabBarView = [[KeepTabBarView alloc]initWithFrame:self.tabBar.frame];       //创建自定义TabBar
-//    [self.view addSubview:tabBarView];  //添加自定义TabBar
-//    [self.tabBar removeFromSuperview];  //将系统原有的tabBar删除
-//    tabBarView.delegate = self;   //设置代理
-//    //循环添加tabbarbutton
-//    NSInteger count = self.tabBarBtnsInfo.count;
-//    for (NSInteger i = 0; i<count ; i++) {
-//        [tabBarView addTabButtonWithDict:self.tabBarBtnsInfo[i]];
-//    }
-
+    [self setChildViewControllersBarItem];
+    
 }
 
-
-
-//数据懒加载
--(NSArray<NSDictionary *> *)tabBarBtnsInfo{
-    if (!_tabBarBtnsInfo) {
-        _tabBarBtnsInfo = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"tabBarButtons.plist" ofType:nil]];
-    }
-    return _tabBarBtnsInfo;
-}
-
-//为tabBarViewController添加子VC
--(void)addChildViewControllers{
-    NSArray<UIViewController*> *ChildControllers = @[[TrainViewController new],[DiscoveryViewController new],[TrendsViewController new],[PersionalViewController new]];
-    for (int i = 0; i<self.tabBarBtnsInfo.count; i++) {
-        NSDictionary *dic = self.tabBarBtnsInfo[i];
-        //添加子控制器
-        KeepNavigationController *navi = [[KeepNavigationController alloc]initWithRootViewController:ChildControllers[i]];
-        //根据字典设置tabBarItem
-        UIImage *image = [[UIImage imageNamed:dic[@"normalImageName"]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        UIImage *selectedImage = [[UIImage imageNamed:dic[@"hightlightImageName"]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        navi.tabBarItem = [[UITabBarItem alloc]initWithTitle:dic[@"title"] image:image selectedImage:selectedImage];
-        [self addChildViewController:navi];
+-(void)setChildViewControllersBarItem{
+    NSArray<UIViewController*> *allChildVC = self.childViewControllers;
+    NSInteger count = allChildVC.count;
+    KeepBarManager *barMgr = [KeepBarManager sharedKeepBarManager];
+    for (int i = 0; i<count; i++) {
+        TabBarButttonItemInfo *itemInfo = [barMgr getTabBarButttonItemInfoWithIndex:i];
+        allChildVC[i].tabBarItem = [[UITabBarItem alloc]initWithTitle:itemInfo.title image:itemInfo.normalImage selectedImage:itemInfo.selectedImage];
     }
 }
-
-
-
-#pragma -mark KeepTabBarViewDelegate
-//实现代理方法
--(void)KeepTabBarView:(KeepTabBarView *)tabBar SelectedIndex:(NSInteger)selectedIndex toIndex:(NSInteger)index{
-    self.selectedIndex = index;   //设置当前界面的下标
-}
-
-
 
 
 

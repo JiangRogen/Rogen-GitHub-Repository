@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1A3C50871CE1E2A700CB1C7F /* personal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A3C50861CE1E2A700CB1C7F /* personal.plist */; };
-		1A4654571CED46600018F66B /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4654561CED46600018F66B /* Me.storyboard */; };
+		1A43CCBC1CF1B3A2004CA9AD /* TrainDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A43CCBA1CF1B3A2004CA9AD /* TrainDetailCell.m */; };
+		1A43CCBD1CF1B3A2004CA9AD /* TrainDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A43CCBB1CF1B3A2004CA9AD /* TrainDetailCell.xib */; };
+		1A6ABB041CF092EB00DD1B1D /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6ABB031CF092EB00DD1B1D /* Me.storyboard */; };
+		1A6ABB081CF098C900DD1B1D /* KeepBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6ABB071CF098C900DD1B1D /* KeepBarManager.m */; };
+		1A8A8B0E1CF13A7200474DF2 /* TabBarButttonItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A8B0D1CF13A7200474DF2 /* TabBarButttonItemInfo.m */; };
+		1A8A8B111CF1488900474DF2 /* MeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A8B101CF1488900474DF2 /* MeNavigationController.m */; };
+		1A8A8B131CF14C7000474DF2 /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A8B121CF14C7000474DF2 /* Train.storyboard */; };
+		1A8A8B161CF1543900474DF2 /* KeepTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A8B151CF1543900474DF2 /* KeepTabBar.m */; };
+		1A8A8B181CF1622A00474DF2 /* Trends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A8B171CF1622A00474DF2 /* Trends.storyboard */; };
+		1A8A8B1A1CF1626E00474DF2 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A8B191CF1626E00474DF2 /* Discovery.storyboard */; };
+		1A8A8B201CF1630900474DF2 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A8B1F1CF1630900474DF2 /* DiscoveryViewController.m */; };
+		1A8A8B231CF1648F00474DF2 /* TrendsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A8B221CF1648F00474DF2 /* TrendsNavigationController.m */; };
+		1A8A8B251CF190D300474DF2 /* trainAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A8B241CF190D300474DF2 /* trainAssests.xcassets */; };
+		1A8A8B2B1CF1AA3400474DF2 /* TrainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A8B2A1CF1AA3400474DF2 /* TrainTableViewController.m */; };
 		1A92DC8B1CDE0CC400DFC775 /* UIView+RoundCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92DC8A1CDE0CC400DFC775 /* UIView+RoundCut.m */; };
 		1A92DC8E1CDE20AA00DFC775 /* HeadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92DC8D1CDE20AA00DFC775 /* HeadImageViewController.m */; };
-		654020061CCC5E1800C6A606 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65401FF11CCC5E1800C6A606 /* DiscoveryViewController.m */; };
+		1AC49DA41CF1B58200A55AC3 /* trainTabel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AC49DA31CF1B58200A55AC3 /* trainTabel.plist */; };
 		654020071CCC5E1800C6A606 /* PersionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65401FF71CCC5E1800C6A606 /* PersionalViewController.m */; };
-		6540200F1CCC634700C6A606 /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6540200E1CCC634700C6A606 /* TrainViewController.m */; };
-		654020121CCC636200C6A606 /* TrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654020111CCC636200C6A606 /* TrendsViewController.m */; };
 		654020151CCC63A000C6A606 /* TrainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654020141CCC63A000C6A606 /* TrainNavigationController.m */; };
 		6540202D1CCCE2D400C6A606 /* DynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6540202C1CCCE2D400C6A606 /* DynamicCell.m */; };
 		6590813E1CCDAC86007352EE /* PlainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590813D1CCDAC86007352EE /* PlainCell.m */; };
@@ -27,25 +38,39 @@
 		65992F321CD0A63200D9B34A /* KeepNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65992F281CD0A63200D9B34A /* KeepNavigationController.m */; };
 		65992F331CD0A63200D9B34A /* KeepTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65992F2A1CD0A63200D9B34A /* KeepTabBarController.m */; };
 		65992F341CD0A63200D9B34A /* tabBarButtons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65992F2C1CD0A63200D9B34A /* tabBarButtons.plist */; };
-		65992F351CD0A63200D9B34A /* KeepTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65992F2F1CD0A63200D9B34A /* KeepTabBarButton.m */; };
-		65992F361CD0A63200D9B34A /* KeepTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65992F311CD0A63200D9B34A /* KeepTabBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A3C50861CE1E2A700CB1C7F /* personal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = personal.plist; sourceTree = "<group>"; };
-		1A4654561CED46600018F66B /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		1A43CCB91CF1B3A2004CA9AD /* TrainDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainDetailCell.h; sourceTree = "<group>"; };
+		1A43CCBA1CF1B3A2004CA9AD /* TrainDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainDetailCell.m; sourceTree = "<group>"; };
+		1A43CCBB1CF1B3A2004CA9AD /* TrainDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainDetailCell.xib; sourceTree = "<group>"; };
+		1A6ABB031CF092EB00DD1B1D /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		1A6ABB061CF098C900DD1B1D /* KeepBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepBarManager.h; sourceTree = "<group>"; };
+		1A6ABB071CF098C900DD1B1D /* KeepBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepBarManager.m; sourceTree = "<group>"; };
+		1A8A8B0C1CF13A7200474DF2 /* TabBarButttonItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarButttonItemInfo.h; sourceTree = "<group>"; };
+		1A8A8B0D1CF13A7200474DF2 /* TabBarButttonItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarButttonItemInfo.m; sourceTree = "<group>"; };
+		1A8A8B0F1CF1488900474DF2 /* MeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeNavigationController.h; sourceTree = "<group>"; };
+		1A8A8B101CF1488900474DF2 /* MeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeNavigationController.m; sourceTree = "<group>"; };
+		1A8A8B121CF14C7000474DF2 /* Train.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Train.storyboard; sourceTree = "<group>"; };
+		1A8A8B141CF1543900474DF2 /* KeepTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepTabBar.h; sourceTree = "<group>"; };
+		1A8A8B151CF1543900474DF2 /* KeepTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepTabBar.m; sourceTree = "<group>"; };
+		1A8A8B171CF1622A00474DF2 /* Trends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trends.storyboard; sourceTree = "<group>"; };
+		1A8A8B191CF1626E00474DF2 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
+		1A8A8B1E1CF1630900474DF2 /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
+		1A8A8B1F1CF1630900474DF2 /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
+		1A8A8B211CF1648F00474DF2 /* TrendsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrendsNavigationController.h; sourceTree = "<group>"; };
+		1A8A8B221CF1648F00474DF2 /* TrendsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrendsNavigationController.m; sourceTree = "<group>"; };
+		1A8A8B241CF190D300474DF2 /* trainAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = trainAssests.xcassets; sourceTree = "<group>"; };
+		1A8A8B291CF1AA3400474DF2 /* TrainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainTableViewController.h; sourceTree = "<group>"; };
+		1A8A8B2A1CF1AA3400474DF2 /* TrainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainTableViewController.m; sourceTree = "<group>"; };
 		1A92DC891CDE0CC400DFC775 /* UIView+RoundCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundCut.h"; sourceTree = "<group>"; };
 		1A92DC8A1CDE0CC400DFC775 /* UIView+RoundCut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundCut.m"; sourceTree = "<group>"; };
 		1A92DC8C1CDE20AA00DFC775 /* HeadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadImageViewController.h; sourceTree = "<group>"; };
 		1A92DC8D1CDE20AA00DFC775 /* HeadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadImageViewController.m; sourceTree = "<group>"; };
-		65401FF01CCC5E1800C6A606 /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscoveryViewController.h; path = ../DiscoveryViewController.h; sourceTree = "<group>"; };
-		65401FF11CCC5E1800C6A606 /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscoveryViewController.m; path = ../DiscoveryViewController.m; sourceTree = "<group>"; };
+		1AC49DA31CF1B58200A55AC3 /* trainTabel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = trainTabel.plist; sourceTree = "<group>"; };
 		65401FF61CCC5E1800C6A606 /* PersionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersionalViewController.h; sourceTree = "<group>"; };
 		65401FF71CCC5E1800C6A606 /* PersionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersionalViewController.m; sourceTree = "<group>"; };
-		6540200D1CCC634700C6A606 /* TrainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainViewController.h; sourceTree = "<group>"; };
-		6540200E1CCC634700C6A606 /* TrainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainViewController.m; sourceTree = "<group>"; };
-		654020101CCC636200C6A606 /* TrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrendsViewController.h; sourceTree = "<group>"; };
-		654020111CCC636200C6A606 /* TrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrendsViewController.m; sourceTree = "<group>"; };
 		654020131CCC63A000C6A606 /* TrainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainNavigationController.h; sourceTree = "<group>"; };
 		654020141CCC63A000C6A606 /* TrainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainNavigationController.m; sourceTree = "<group>"; };
 		6540202B1CCCE2D400C6A606 /* DynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicCell.h; sourceTree = "<group>"; };
@@ -67,10 +92,6 @@
 		65992F291CD0A63200D9B34A /* KeepTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepTabBarController.h; sourceTree = "<group>"; };
 		65992F2A1CD0A63200D9B34A /* KeepTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepTabBarController.m; sourceTree = "<group>"; };
 		65992F2C1CD0A63200D9B34A /* tabBarButtons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tabBarButtons.plist; sourceTree = "<group>"; };
-		65992F2E1CD0A63200D9B34A /* KeepTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepTabBarButton.h; sourceTree = "<group>"; };
-		65992F2F1CD0A63200D9B34A /* KeepTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepTabBarButton.m; sourceTree = "<group>"; };
-		65992F301CD0A63200D9B34A /* KeepTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepTabBarView.h; sourceTree = "<group>"; };
-		65992F311CD0A63200D9B34A /* KeepTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepTabBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6ABB051CF0988500DD1B1D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				1A6ABB061CF098C900DD1B1D /* KeepBarManager.h */,
+				1A6ABB071CF098C900DD1B1D /* KeepBarManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		1A92DC851CDE0BFD00DFC775 /* extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,21 +123,22 @@
 			path = extension;
 			sourceTree = "<group>";
 		};
-		65401FEE1CCC5E1800C6A606 /* descovery */ = {
+		65401FEE1CCC5E1800C6A606 /* discovery */ = {
 			isa = PBXGroup;
 			children = (
 				65401FEF1CCC5E1800C6A606 /* Controller */,
 				65401FF21CCC5E1800C6A606 /* Model */,
 				65401FF31CCC5E1800C6A606 /* View */,
 			);
+			name = discovery;
 			path = descovery;
 			sourceTree = "<group>";
 		};
 		65401FEF1CCC5E1800C6A606 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				65401FF11CCC5E1800C6A606 /* DiscoveryViewController.m */,
-				65401FF01CCC5E1800C6A606 /* DiscoveryViewController.h */,
+				1A8A8B1E1CF1630900474DF2 /* DiscoveryViewController.h */,
+				1A8A8B1F1CF1630900474DF2 /* DiscoveryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,6 +153,7 @@
 		65401FF31CCC5E1800C6A606 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A8A8B191CF1626E00474DF2 /* Discovery.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -139,6 +171,8 @@
 		65401FF51CCC5E1800C6A606 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1A8A8B0F1CF1488900474DF2 /* MeNavigationController.h */,
+				1A8A8B101CF1488900474DF2 /* MeNavigationController.m */,
 				65401FF61CCC5E1800C6A606 /* PersionalViewController.h */,
 				65401FF71CCC5E1800C6A606 /* PersionalViewController.m */,
 				1A92DC8C1CDE20AA00DFC775 /* HeadImageViewController.h */,
@@ -164,7 +198,7 @@
 				6540202C1CCCE2D400C6A606 /* DynamicCell.m */,
 				6590813C1CCDAC86007352EE /* PlainCell.h */,
 				6590813D1CCDAC86007352EE /* PlainCell.m */,
-				1A4654561CED46600018F66B /* Me.storyboard */,
+				1A6ABB031CF092EB00DD1B1D /* Me.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +209,7 @@
 				65401FFB1CCC5E1800C6A606 /* Controller */,
 				65401FFC1CCC5E1800C6A606 /* Model */,
 				65401FFF1CCC5E1800C6A606 /* View */,
+				1A8A8B241CF190D300474DF2 /* trainAssests.xcassets */,
 			);
 			path = train;
 			sourceTree = "<group>";
@@ -184,8 +219,8 @@
 			children = (
 				654020131CCC63A000C6A606 /* TrainNavigationController.h */,
 				654020141CCC63A000C6A606 /* TrainNavigationController.m */,
-				6540200D1CCC634700C6A606 /* TrainViewController.h */,
-				6540200E1CCC634700C6A606 /* TrainViewController.m */,
+				1A8A8B291CF1AA3400474DF2 /* TrainTableViewController.h */,
+				1A8A8B2A1CF1AA3400474DF2 /* TrainTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +228,7 @@
 		65401FFC1CCC5E1800C6A606 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1AC49DA31CF1B58200A55AC3 /* trainTabel.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +236,10 @@
 		65401FFF1CCC5E1800C6A606 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A8A8B121CF14C7000474DF2 /* Train.storyboard */,
+				1A43CCB91CF1B3A2004CA9AD /* TrainDetailCell.h */,
+				1A43CCBA1CF1B3A2004CA9AD /* TrainDetailCell.m */,
+				1A43CCBB1CF1B3A2004CA9AD /* TrainDetailCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,8 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				654020011CCC5E1800C6A606 /* Controller */,
-				654020051CCC5E1800C6A606 /* View */,
 				654020021CCC5E1800C6A606 /* Model */,
+				654020051CCC5E1800C6A606 /* View */,
 			);
 			path = trends;
 			sourceTree = "<group>";
@@ -217,8 +257,8 @@
 		654020011CCC5E1800C6A606 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				654020101CCC636200C6A606 /* TrendsViewController.h */,
-				654020111CCC636200C6A606 /* TrendsViewController.m */,
+				1A8A8B211CF1648F00474DF2 /* TrendsNavigationController.h */,
+				1A8A8B221CF1648F00474DF2 /* TrendsNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +273,7 @@
 		654020051CCC5E1800C6A606 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A8A8B171CF1622A00474DF2 /* Trends.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				65401FFA1CCC5E1800C6A606 /* train */,
-				65401FEE1CCC5E1800C6A606 /* descovery */,
+				65401FEE1CCC5E1800C6A606 /* discovery */,
 				654020001CCC5E1800C6A606 /* trends */,
 				65401FF41CCC5E1800C6A606 /* me */,
 			);
@@ -309,8 +350,9 @@
 			isa = PBXGroup;
 			children = (
 				65992F261CD0A63200D9B34A /* Controller */,
-				65992F2B1CD0A63200D9B34A /* Model */,
 				65992F2D1CD0A63200D9B34A /* View */,
+				65992F2B1CD0A63200D9B34A /* Model */,
+				1A6ABB051CF0988500DD1B1D /* Tool */,
 			);
 			path = KeepBar;
 			sourceTree = "<group>";
@@ -330,6 +372,8 @@
 			isa = PBXGroup;
 			children = (
 				65992F2C1CD0A63200D9B34A /* tabBarButtons.plist */,
+				1A8A8B0C1CF13A7200474DF2 /* TabBarButttonItemInfo.h */,
+				1A8A8B0D1CF13A7200474DF2 /* TabBarButttonItemInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,10 +381,8 @@
 		65992F2D1CD0A63200D9B34A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				65992F2E1CD0A63200D9B34A /* KeepTabBarButton.h */,
-				65992F2F1CD0A63200D9B34A /* KeepTabBarButton.m */,
-				65992F301CD0A63200D9B34A /* KeepTabBarView.h */,
-				65992F311CD0A63200D9B34A /* KeepTabBarView.m */,
+				1A8A8B141CF1543900474DF2 /* KeepTabBar.h */,
+				1A8A8B151CF1543900474DF2 /* KeepTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,11 +445,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC49DA41CF1B58200A55AC3 /* trainTabel.plist in Resources */,
+				1A8A8B181CF1622A00474DF2 /* Trends.storyboard in Resources */,
 				65992F341CD0A63200D9B34A /* tabBarButtons.plist in Resources */,
+				1A8A8B1A1CF1626E00474DF2 /* Discovery.storyboard in Resources */,
+				1A8A8B251CF190D300474DF2 /* trainAssests.xcassets in Resources */,
 				6590865D1CC62DE000C08B21 /* LaunchScreen.storyboard in Resources */,
-				1A4654571CED46600018F66B /* Me.storyboard in Resources */,
+				1A6ABB041CF092EB00DD1B1D /* Me.storyboard in Resources */,
 				6590865A1CC62DE000C08B21 /* Assets.xcassets in Resources */,
+				1A8A8B131CF14C7000474DF2 /* Train.storyboard in Resources */,
 				1A3C50871CE1E2A700CB1C7F /* personal.plist in Resources */,
+				1A43CCBD1CF1B3A2004CA9AD /* TrainDetailCell.xib in Resources */,
 				659086581CC62DE000C08B21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,22 +467,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65992F351CD0A63200D9B34A /* KeepTabBarButton.m in Sources */,
+				1A8A8B0E1CF13A7200474DF2 /* TabBarButttonItemInfo.m in Sources */,
 				659086521CC62DE000C08B21 /* AppDelegate.m in Sources */,
 				6540202D1CCCE2D400C6A606 /* DynamicCell.m in Sources */,
+				1A6ABB081CF098C900DD1B1D /* KeepBarManager.m in Sources */,
 				6590864F1CC62DE000C08B21 /* main.m in Sources */,
-				654020061CCC5E1800C6A606 /* DiscoveryViewController.m in Sources */,
-				65992F361CD0A63200D9B34A /* KeepTabBarView.m in Sources */,
 				1A92DC8B1CDE0CC400DFC775 /* UIView+RoundCut.m in Sources */,
 				6590813E1CCDAC86007352EE /* PlainCell.m in Sources */,
 				1A92DC8E1CDE20AA00DFC775 /* HeadImageViewController.m in Sources */,
-				654020121CCC636200C6A606 /* TrendsViewController.m in Sources */,
 				65992F331CD0A63200D9B34A /* KeepTabBarController.m in Sources */,
+				1A8A8B111CF1488900474DF2 /* MeNavigationController.m in Sources */,
+				1A43CCBC1CF1B3A2004CA9AD /* TrainDetailCell.m in Sources */,
+				1A8A8B161CF1543900474DF2 /* KeepTabBar.m in Sources */,
 				65992F321CD0A63200D9B34A /* KeepNavigationController.m in Sources */,
-				6540200F1CCC634700C6A606 /* TrainViewController.m in Sources */,
 				659081411CCDACBB007352EE /* HeadCell.m in Sources */,
+				1A8A8B201CF1630900474DF2 /* DiscoveryViewController.m in Sources */,
 				654020071CCC5E1800C6A606 /* PersionalViewController.m in Sources */,
 				654020151CCC63A000C6A606 /* TrainNavigationController.m in Sources */,
+				1A8A8B231CF1648F00474DF2 /* TrendsNavigationController.m in Sources */,
+				1A8A8B2B1CF1AA3400474DF2 /* TrainTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

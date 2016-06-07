@@ -1,22 +1,22 @@
 //
-//  TrainNavigationController.m
+//  TrendsNavigationController.m
 //  Keep
 //
-//  Created by TRRogen on 16/4/24.
+//  Created by TRRogen on 16/5/22.
 //  Copyright © 2016年 TRRogen. All rights reserved.
 //
 
-#import "TrainNavigationController.h"
+#import "TrendsNavigationController.h"
 
-@interface TrainNavigationController ()
+@interface TrendsNavigationController ()
 
 @end
 
-@implementation TrainNavigationController
+@implementation TrendsNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

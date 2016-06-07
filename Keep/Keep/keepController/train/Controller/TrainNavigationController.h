@@ -6,8 +6,8 @@
 //  Copyright © 2016年 TRRogen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "KeepNavigationController.h"
 
-@interface TrainNavigationController : UINavigationController
+@interface TrainNavigationController : KeepNavigationController
 
 @end

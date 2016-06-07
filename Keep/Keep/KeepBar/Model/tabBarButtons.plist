@@ -7,7 +7,7 @@
 		<string>训练</string>
 		<key>normalImageName</key>
 		<string>train</string>
-		<key>hightlightImageName</key>
+		<key>selectedImageName</key>
 		<string>train_on</string>
 	</dict>
 	<dict>
@@ -15,7 +15,7 @@
 		<string>发现</string>
 		<key>normalImageName</key>
 		<string>discovery</string>
-		<key>hightlightImageName</key>
+		<key>selectedImageName</key>
 		<string>discovery_on</string>
 	</dict>
 	<dict>
@@ -23,7 +23,7 @@
 		<string>关注</string>
 		<key>normalImageName</key>
 		<string>trends</string>
-		<key>hightlightImageName</key>
+		<key>selectedImageName</key>
 		<string>trends_on</string>
 	</dict>
 	<dict>
@@ -31,7 +31,7 @@
 		<string>我</string>
 		<key>normalImageName</key>
 		<string>personal</string>
-		<key>hightlightImageName</key>
+		<key>selectedImageName</key>
 		<string>personal_on</string>
 	</dict>
 </array>

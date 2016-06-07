@@ -1,23 +1,24 @@
 //
-//  TrainNavigationController.m
+//  MeNavigationController.m
 //  Keep
 //
-//  Created by TRRogen on 16/4/24.
+//  Created by TRRogen on 16/5/22.
 //  Copyright © 2016年 TRRogen. All rights reserved.
 //
 
-#import "TrainNavigationController.h"
+#import "MeNavigationController.h"
 
-@interface TrainNavigationController ()
+@interface MeNavigationController ()
 
 @end
 
-@implementation TrainNavigationController
+@implementation MeNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

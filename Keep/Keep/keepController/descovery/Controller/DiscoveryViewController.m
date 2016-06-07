@@ -1,22 +1,22 @@
 //
-//  TrainNavigationController.m
+//  DiscoveryViewController.m
 //  Keep
 //
-//  Created by TRRogen on 16/4/24.
+//  Created by TRRogen on 16/5/22.
 //  Copyright © 2016年 TRRogen. All rights reserved.
 //
 
-#import "TrainNavigationController.h"
+#import "DiscoveryViewController.h"
 
-@interface TrainNavigationController ()
+@interface DiscoveryViewController ()
 
 @end
 
-@implementation TrainNavigationController
+@implementation DiscoveryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

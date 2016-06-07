@@ -14,14 +14,15 @@
 
 @implementation KeepNavigationController
 +(void)initialize{
-    if (self== [KeepNavigationController class]) {
+    if (self == [KeepNavigationController class]) {
         /*设置navigationBar*/
         //获取navigationBar的外观
         UINavigationBar *naviBar = [UINavigationBar appearance];
         //设置NavigationBar的背景图
         [naviBar setBackgroundImage:[UIImage imageNamed:@"naviBarBackgroud"] forBarMetrics:UIBarMetricsDefault];
         //设置NavigationBar两边的Item的渲染色
-        naviBar.tintColor = [UIColor whiteColor];
+        naviBar.barTintColor = [UIColor whiteColor];
+        naviBar.barStyle = UIBarStyleBlack;
         //设置navigationBar标题的位置
 //        [naviBar setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
         //设置navigationBar标题的属性
@@ -37,7 +38,13 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

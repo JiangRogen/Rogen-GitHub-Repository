@@ -10,6 +10,7 @@
 #import "DynamicCell.h"
 #import "HeadImageViewController.h"
 #import "HeadCell.h"
+
 #define CELLHEIGHT 80.0
 @interface PersionalViewController (){
     NSArray<NSArray<NSDictionary*>*> *_persionalArr;

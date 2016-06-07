@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Train Table View Controller-->
+        <scene sceneID="pFJ-e7-gXK">
+            <objects>
+                <tableViewController id="wXe-hv-xJq" customClass="TrainTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="61" sectionHeaderHeight="18" sectionFooterHeight="18" id="gKE-BY-Oza">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90835790364462421" green="0.99286083064672925" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.37180754542350769" green="0.21645230054855347" blue="0.07421710342168808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="Nih-8B-jyd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="A0Z-7w-pkY" customClass="TrainDetailCell">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A0Z-7w-pkY" id="RSb-a2-07E">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8UH-lM-6bS">
+                                                    <rect key="frame" x="-52" y="-80" width="580" height="40"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="GkV-QV-6pk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="580" height="0.0"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA5-hb-kwp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="0.0"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="upa-8M-3Xi"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                                    <state key="normal" title="总共训练"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQS-Ui-bBl">
+                                                                    <rect key="frame" x="550" y="0.0" width="30" height="0.0"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="isg-Kr-XGn"/>
+                                                                    </constraints>
+                                                                    <state key="normal" backgroundImage="nextbtn"/>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="bQS-Ui-bBl" firstAttribute="trailing" secondItem="GkV-QV-6pk" secondAttribute="trailingMargin" id="Cpv-9Q-hO8"/>
+                                                                <constraint firstItem="bQS-Ui-bBl" firstAttribute="top" secondItem="GkV-QV-6pk" secondAttribute="topMargin" id="Z11-pl-TDg"/>
+                                                                <constraint firstItem="iA5-hb-kwp" firstAttribute="leading" secondItem="GkV-QV-6pk" secondAttribute="leadingMargin" id="clq-yk-x4i"/>
+                                                                <constraint firstItem="iA5-hb-kwp" firstAttribute="bottom" secondItem="GkV-QV-6pk" secondAttribute="bottomMargin" id="ndG-lF-QmT"/>
+                                                                <constraint firstItem="iA5-hb-kwp" firstAttribute="top" secondItem="GkV-QV-6pk" secondAttribute="topMargin" id="nvv-cT-pQd"/>
+                                                                <constraint firstItem="bQS-Ui-bBl" firstAttribute="bottom" secondItem="GkV-QV-6pk" secondAttribute="bottomMargin" id="tv2-kl-QQe"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="24S-oK-Q7Y">
+                                                            <rect key="frame" x="0.0" y="0.0" width="580" height="6"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="w1n-oq-HN4">
+                                                                    <rect key="frame" x="195" y="0.0" width="190" height="6"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUI-dL-4wX">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="6"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
+                                                                            <state key="normal" title="2,43893"/>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymS-50-pcK">
+                                                                            <rect key="frame" x="160" y="0.0" width="30" height="0.0"/>
+                                                                            <state key="normal" title="分钟"/>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-YE-xTB">
+                                                            <rect key="frame" x="0.0" y="6" width="580" height="21"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="K0e-rA-Ujj">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="21"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-by-YkI">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="7"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" white="0.55914429529999998" alpha="1" colorSpace="deviceWhite"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="u5R-hB-f6s">
+                                                                            <rect key="frame" x="0.0" y="7" width="72" height="14"/>
+                                                                            <subviews>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV2-pD-NfR">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="14"/>
+                                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                                                    <state key="normal" title="100"/>
+                                                                                </button>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-Z9-VqD">
+                                                                                    <rect key="frame" x="42" y="0.0" width="30" height="24"/>
+                                                                                    <state key="normal" title="次"/>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-04-VEy">
+                                                                    <rect key="frame" x="253" y="0.0" width="60" height="42"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soW-a4-Zad">
+                                                                            <rect key="frame" x="13" y="0.0" width="34" height="0.0"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" white="0.55914429529999998" alpha="1" colorSpace="deviceWhite"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-Vx-gTz">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="42"/>
+                                                                            <subviews>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtZ-9C-xDH">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="42"/>
+                                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                                                    <state key="normal" title="50"/>
+                                                                                </button>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW5-zj-nOd">
+                                                                                    <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                                                                    <state key="normal" title="天"/>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="i1Y-3p-39G">
+                                                                    <rect key="frame" x="480" y="0.0" width="100" height="42"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消耗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jw8-PB-opo">
+                                                                            <rect key="frame" x="66" y="0.0" width="34" height="0.0"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" white="0.55914429529999998" alpha="1" colorSpace="deviceWhite"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="PER-KE-Be6">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="42"/>
+                                                                            <subviews>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gs-Ug-WZV">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="42"/>
+                                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                                                    <state key="normal" title="11123"/>
+                                                                                </button>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOa-Rg-3ad">
+                                                                                    <rect key="frame" x="70" y="0.0" width="30" height="30"/>
+                                                                                    <state key="normal" title="千卡"/>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-2f-blD">
+                                                            <rect key="frame" x="0.0" y="27" width="580" height="13"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="lastBaseline" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khv-eE-KWk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="13"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVi-GF-TdU">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="13"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                                            <state key="normal" title="6">
+                                                                                <color key="titleColor" red="0.1087230518" green="0.75627154110000006" blue="0.082340456549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y30-ZC-LPD">
+                                                                            <rect key="frame" x="30" y="0.0" width="120" height="20"/>
+                                                                            <state key="normal" title="本月好友训练排名"/>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FEs-VY-bWq">
+                                                                    <rect key="frame" x="495" y="0.0" width="85" height="13"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-pl-Zul">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="13"/>
+                                                                        </imageView>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-mD-3EK">
+                                                                            <rect key="frame" x="25" y="0.0" width="25" height="13"/>
+                                                                        </imageView>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_forcetouch_run" translatesAutoresizingMaskIntoConstraints="NO" id="CFw-yV-khI">
+                                                                            <rect key="frame" x="50" y="0.0" width="35" height="13"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="tintColor" red="0.25256150960922241" green="0.18944475054740906" blue="0.059284128248691559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="8UH-lM-6bS" firstAttribute="top" secondItem="RSb-a2-07E" secondAttribute="top" constant="10" id="RTT-29-PbH"/>
+                                                <constraint firstAttribute="bottom" secondItem="8UH-lM-6bS" secondAttribute="bottom" constant="10" id="gyP-RS-wbU"/>
+                                                <constraint firstAttribute="trailing" secondItem="8UH-lM-6bS" secondAttribute="trailing" constant="10" id="kbS-lp-7RG"/>
+                                                <constraint firstItem="8UH-lM-6bS" firstAttribute="leading" secondItem="RSb-a2-07E" secondAttribute="leading" constant="10" id="zD2-jc-Yy4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <connections>
+                                            <segue destination="9Ws-cc-GmP" kind="show" id="b2Z-H2-uUg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="我的课程表" id="7j9-QT-ULB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tainDetailCell" rowHeight="61" id="hOf-3s-krn">
+                                        <rect key="frame" x="0.0" y="211" width="600" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hOf-3s-krn" id="9eo-NP-V9y">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="tintColor" red="0.25256150960000001" green="0.18944475050000001" blue="0.059284128249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="我的训练" id="RJS-Jh-3Cq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tainDetailCell" rowHeight="61" id="wGx-a0-vcC">
+                                        <rect key="frame" x="0.0" y="323" width="600" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wGx-a0-vcC" id="TvU-rY-L4H">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="tintColor" red="0.25256150960000001" green="0.18944475050000001" blue="0.059284128249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="THs-bm-3d8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tainDetailCell" rowHeight="61" id="zOf-Rc-taX">
+                                        <rect key="frame" x="0.0" y="420" width="600" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zOf-Rc-taX" id="pXS-VE-V3v">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bc9-7k-130">
+                                                    <rect key="frame" x="251" y="15" width="98" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addImage" translatesAutoresizingMaskIntoConstraints="NO" id="XUh-lc-Kjc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加训练" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-BZ-Zsz">
+                                                            <rect key="frame" x="30" y="5" width="68" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.47354760906040266" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="tintColor" red="0.25256150960000001" green="0.18944475050000001" blue="0.059284128249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Bc9-7k-130" firstAttribute="centerX" secondItem="pXS-VE-V3v" secondAttribute="centerX" id="RxH-LI-LJr"/>
+                                                <constraint firstItem="Bc9-7k-130" firstAttribute="centerY" secondItem="pXS-VE-V3v" secondAttribute="centerY" id="rMs-l7-gD2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="wXe-hv-xJq" id="a54-yZ-qhk"/>
+                            <outlet property="delegate" destination="wXe-hv-xJq" id="dab-dw-ZxJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="L6Q-4b-0lQ">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="icon_forcetouch_run" id="6K5-fk-DEZ"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="XD9-wT-2fF">
+                            <rect key="frame" x="259" y="2" width="82" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="sticker_keep"/>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" image="addImage" id="y0G-n9-16N"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0te-H9-5zM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="430"/>
+        </scene>
+        <!--所有训练历史-->
+        <scene sceneID="lPJ-wF-B26">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="9Ws-cc-GmP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1pH-q0-kT1"/>
+                        <viewControllerLayoutGuide type="bottom" id="dAB-Ml-UPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cdn-9V-tzn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="所有训练历史" id="w48-Iw-pdr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7F-q8-zWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2007" y="441"/>
+        </scene>
+        <!--Train Navigation Controller-->
+        <scene sceneID="RR3-i8-uop">
+            <objects>
+                <navigationController storyboardIdentifier="trainNavi" automaticallyAdjustsScrollViewInsets="NO" id="Jet-5s-eGe" customClass="TrainNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KTp-1L-oeU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wXe-hv-xJq" kind="relationship" relationship="rootViewController" id="P9A-O4-7oK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rk5-dy-9yy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="435"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addImage" width="30" height="30"/>
+        <image name="discovery" width="25" height="25"/>
+        <image name="icon_forcetouch_run" width="35" height="35"/>
+        <image name="nextbtn" width="8" height="13"/>
+        <image name="sticker_keep" width="82" height="40"/>
+    </resources>
+</document>
